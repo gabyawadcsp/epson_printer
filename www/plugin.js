@@ -17,7 +17,7 @@ var epos2 = {
     exec(successCallback, errorCallback, PLUGIN_NAME, 'disconnectPrinter', []);
   },
   print: function(data, successCallback, errorCallback) {
-    exec(successCallback, errorCallback, PLUGIN_NAME, 'print', encodeURIComponent(data));
+    exec(successCallback, errorCallback, PLUGIN_NAME, 'print', data);
   },
 };
 
