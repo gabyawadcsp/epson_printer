@@ -172,7 +172,7 @@
             if ([data isEqualToString:@"\n"]) {
                 result = [printer addFeedLine:1];
             } else {
-                result = [printer addText:data];
+                result = [printer addText:data:Epos2Lang.EPOS2_LANG_ZH_CN];
             }
 
             if (result != EPOS2_SUCCESS) {
